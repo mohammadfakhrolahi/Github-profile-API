@@ -1,0 +1,144 @@
+// Import Files
+@import './globalStyling/layout';
+
+main {
+  height: 100vh;
+  background: rgb(4,115,252);
+  background: linear-gradient(270deg, rgba(4,115,252,1) 50%, rgba(242,244,247,1) 50%);
+}
+
+#main-section {
+  height: 100vh;
+  @include column-js-ac();
+}
+
+// Search Box
+#search-box {
+  @include flex-jb-ic();
+  width: 30%;
+  background: $primary-bg;
+  padding: 0.5rem 0.5rem 0.5rem 2.2rem;
+  margin: 10rem 0;
+  border: 0.2rem solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.099);
+  transition: 0.2s;
+
+  #input {
+    width: 100%;
+    background: $primary-bg;
+
+    &:focus {
+      color: $primary-text;
+    }
+  }
+
+  #search-box__btn {
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.2s;
+
+    i {
+      font-size: 2rem;
+      color: $blue;
+    }
+
+    &:hover {
+      background: $blue;
+      
+      i {
+        color: $primary-bg;
+      }
+    }
+  }
+
+  &:focus-within {
+    border: 2px solid $secondary-text;
+  }
+}
+
+// Profile Card
+#profile-card {
+  width: 50%;
+  @include column-js-cs-is();
+  background: $primary-bg;
+  padding: 4rem;
+  border-radius: 2rem;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.099)
+}
+
+// Card header, Account detailes
+#card-header, #account-detailes {
+  @include flex-js-ic();
+}
+
+// Image
+#image-box {
+  width: 12rem;
+  margin-right: 2rem;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+#profile-detailes,
+//Name, Username
+#profile-detailes__name {
+  @include column-js-cs-is();
+}
+
+// Name
+#profile-name {
+  font: {
+    size: $font-28;
+    weight: $weight-600;
+  }
+}
+
+// Username
+#username {
+  color: $secondary-text;
+  margin-top: 1rem;
+  font: {
+    size: $font-18;
+    weight: $weight-500;
+  }
+}
+
+#account-detailes {
+  margin-top: 2rem
+}
+.account-detailes__child {
+  @include flex-js-ic();
+  margin-right: 2rem;
+
+  .detailes__number {
+    font: {
+      size: $font-18;
+      weight: $weight-500;
+    }
+  }
+
+  .detailes__title {
+    color: $secondary-text;
+    font-size: $font-18;
+  }
+}
+
+// Account Info
+#account-info {
+  margin: 2rem 0 0 14rem;
+
+}
+// Bio
+#info {
+  @include flex-js-ic();
+  margin-top: 1rem;
+
+  i {
+    color: $secondary-text;
+    margin-right: 1rem;
+  }
+}

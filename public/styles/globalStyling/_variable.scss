@@ -65,11 +65,11 @@
   // align-content: center;
 }
 
-@mixin column-js-is {
+@mixin column-js-ac {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: flex-start;
+  align-items: center;
 }
 
 @mixin column-js-cs-is {
