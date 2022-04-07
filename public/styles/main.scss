@@ -93,7 +93,7 @@ main {
 #profile-name {
   font: {
     size: $font-28;
-    weight: $weight-600;
+    weight: $weight-500;
   }
 }
 
@@ -102,7 +102,7 @@ main {
   color: $secondary-text;
   margin-top: 1rem;
   font: {
-    size: $font-18;
+    size: $font-16;
     weight: $weight-500;
   }
 }
@@ -116,14 +116,14 @@ main {
 
   .detailes__number {
     font: {
-      size: $font-18;
+      size: $font-16;
       weight: $weight-500;
     }
   }
 
   .detailes__title {
     color: $secondary-text;
-    font-size: $font-18;
+    font-size: $font-16;
   }
 }
 

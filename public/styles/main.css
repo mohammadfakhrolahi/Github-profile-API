@@ -182,13 +182,13 @@ main {
 
 #profile-name {
   font-size: 2.8rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #username {
   color: #9299a3;
   margin-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -203,12 +203,12 @@ main {
   margin-right: 2rem;
 }
 .account-detailes__child .detailes__number {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 .account-detailes__child .detailes__title {
   color: #9299a3;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #account-info {
