@@ -153,8 +153,8 @@ main {
   background: #ffffff;
   padding: 4rem;
   border-radius: 2rem;
-  transition: 0.2s;
   box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.099);
+  visibility: hidden;
 }
 
 #card-header, #account-detailes {
