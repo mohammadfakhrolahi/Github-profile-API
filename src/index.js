@@ -8,6 +8,11 @@ searchBtn.addEventListener('click', (e) => {
   let inputValue = input.value
   profileCard.style.visibility = 'visible'
 
+  if (!inputValue) {
+    alert('Input is empty!')
+    return
+  }
+
   fetch(`https://api.github.com/users/${inputValue}`)
     .then(res => {
       return res.json()
