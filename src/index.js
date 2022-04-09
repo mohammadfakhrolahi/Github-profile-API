@@ -15,39 +15,24 @@ searchBtn.addEventListener('click', (e) => {
     .then(responseData => {
       data(responseData)
     })
-    
-  console.log(inputValue)
-  
-
-  // let profile = data
-
-  // profile = profile.map((item) => {
-  //   const { name, login, public_repos, followers, following, location, avatar_url } = item
-
-  //   return { name, login, public_repos, followers, following, location, avatar_url }
-  // })
-  // console.log(profile)
-
-  // return profile
-
 })
 
 const data = (data) => {
-  const { avatar_url, name, login, public_repos, following, followers, bio, location } = data
+  const { avatar_url, name, login, public_repos, following, followers, bio, location, html_url } = data
 
-  let result = ''
-
-  result = `
+  profileCard.innerHTML = `
     <div id="card-header">
       <div id="image-box">
-        <img src=${avatar_url} id="imgAvatar" alt="Profile Image" title="Profile Image">
+        <a href=${html_url} target="_blanck">
+          <img src=${avatar_url} id="imgAvatar" alt="Profile Image" title="Profile">
+        </a>  
       </div>
 
       <div id="profile-detailes">
         <div id="profile-detailes__name">
-          <div id="profile-name">${name}</div>
+          <a href=${html_url} target="_blanck" id="profile-name">${name}</a>
 
-          <div id="username">${login}</div>
+          <div id="username">@${login}</div>
         </div>
 
         <div id="account-detailes">
@@ -80,8 +65,6 @@ const data = (data) => {
       </div>
     </div>
   `
-
-  profileCard.innerHTML = result
 }
 
 
