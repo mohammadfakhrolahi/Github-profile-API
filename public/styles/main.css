@@ -96,6 +96,14 @@ main {
   background: linear-gradient(270deg, #0473fc 50%, #f2f4f7 50%);
 }
 
+#logo {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+}
+
 #main-section {
   height: 100vh;
   display: flex;

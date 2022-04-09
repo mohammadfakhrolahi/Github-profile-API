@@ -7,6 +7,14 @@ main {
   background: linear-gradient(270deg, rgba(4,115,252,1) 50%, rgba(242,244,247,1) 50%);
 }
 
+#logo {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+}
+
 #main-section {
   height: 100vh;
   @include column-js-ac();
