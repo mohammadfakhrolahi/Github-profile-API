@@ -92,10 +92,34 @@ button {
 
 main {
   height: 100vh;
-  background: #0473fc;
-  background: linear-gradient(270deg, #0473fc 50%, #f2f4f7 50%);
+  background: linear-gradient(314deg, #8d95cd, #ffffff);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 #logo {
   position: fixed;
   top: 2rem;

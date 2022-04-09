@@ -3,9 +3,23 @@
 
 main {
   height: 100vh;
-  background: rgb(4,115,252);
-  background: linear-gradient(270deg, rgba(4,115,252,1) 50%, rgba(242,244,247,1) 50%);
+  background: linear-gradient(314deg, #8d95cd, #ffffff);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
 
 #logo {
   position: fixed;
@@ -73,7 +87,7 @@ main {
   padding: 4rem;
   border-radius: 2rem;
   box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.099);
-  visibility: hidden
+  visibility: hidden;
 }
 
 // Card header, Account detailes
