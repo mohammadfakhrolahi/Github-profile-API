@@ -74,20 +74,20 @@ const data = (data) => {
 
 
 
-// // Get account data from github API
-// class Account {
-//   async getData() {
-//     const result = await fetch(`https://api.github.com/users/${inputValue}`)
-//     const data = await result.json()
+// Get account data from github API
+class Account {
+  async getData() {
+    const result = await fetch(`https://api.github.com/users/${inputValue}`)
+    const data = await result.json()
 
-//     return data
-//   }
-// }
+    return data
+  }
+}
 
-// // Present data in DOM
-// class View {}
+// Present data in DOM
+class View {}
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const view = new View()
-//   const account = new Account()
-// })
+document.addEventListener('DOMContentLoaded', () => {
+  const view = new View()
+  const account = new Account()
+})

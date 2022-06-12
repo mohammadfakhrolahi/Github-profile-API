@@ -39,7 +39,7 @@ main {
   @include flex-jb-ic();
   width: 30%;
   background: $primary-bg;
-  padding: 0.5rem 0.5rem 0.5rem 2.2rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin: 10rem 0;
   border: 0.2rem solid transparent;
   border-radius: 1rem;
@@ -48,6 +48,7 @@ main {
 
   #input {
     width: 100%;
+    height: 100%;
     background: $primary-bg;
 
     &:focus {
