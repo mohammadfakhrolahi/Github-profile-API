@@ -25,6 +25,9 @@ searchBtn.addEventListener('click', (e) => {
 const data = (data) => {
   const { avatar_url, name, login, public_repos, following, followers, bio, location, html_url } = data
 
+  // Check location exist
+  const locationCheck = () => location ? location : 'Unknown'
+
   profileCard.innerHTML = `
     <div id="card-header">
       <div id="image-box">
@@ -66,7 +69,7 @@ const data = (data) => {
 
       <div id="info">
         <i class="fa-solid fa-2x fa-location-dot"></i>
-        <p class="info__text">${location}</p>
+        <p class="info__text">${locationCheck()}</p>
       </div>
     </div>
   `
