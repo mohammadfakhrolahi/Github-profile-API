@@ -1,5 +1,4 @@
 # Github Profile API 
-## Front-end-mentorship-challenge-09
 
 <h2>Use the GitHub API in web app</h2>
 
